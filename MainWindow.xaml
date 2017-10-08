@@ -1,0 +1,43 @@
+﻿<Window x:Class="drapAndDropTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:drapAndDropTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <ScrollViewer Name="sv">
+        <StackPanel Name="sp" AllowDrop="True" Background="SkyBlue" PreviewMouseLeftButtonDown="sp_PreviewMouseLeftButtonDown"
+                PreviewMouseLeftButtonUp="sp_PreviewMouseLeftButtonUp" Drop="sp_Drop" PreviewDragOver="sp_PreviewDragOver">
+            <DockPanel Height="50" Width="200" Background="Red" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 1 " DockPanel.Dock="Right" />
+                <Button Content="button 1" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Green" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 2 " DockPanel.Dock="Right" />
+                <Button Content="button 2" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Yellow" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 3 " DockPanel.Dock="Right" />
+                <Button Content="button 3" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Pink" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 4 " DockPanel.Dock="Right" />
+                <Button Content="button 4" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Teal" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 5 " DockPanel.Dock="Right" />
+                <Button Content="button 5" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Black" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 6 " DockPanel.Dock="Right" />
+                <Button Content="button 6" Margin="30,0,0,0" />
+            </DockPanel>
+            <DockPanel Height="50" Width="200" Background="Purple" PreviewMouseMove="dp_PreviewMouseMove">
+                <Button Content=" 7 " DockPanel.Dock="Right" />
+                <Button Content="button 7" Margin="30,0,0,0" />
+            </DockPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
